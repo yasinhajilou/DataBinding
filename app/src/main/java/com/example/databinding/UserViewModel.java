@@ -9,13 +9,9 @@ import androidx.lifecycle.MutableLiveData;
 
 
 public class UserViewModel extends AndroidViewModel {
-    public MutableLiveData<String > mName = new MutableLiveData<>();
+    public MutableLiveData<String > name = new MutableLiveData<>();
 
     public UserViewModel(@NonNull Application application) {
         super(application);
-    }
-
-    public LiveData<String> getName() {
-        return mName;
     }
 }
